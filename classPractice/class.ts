@@ -124,7 +124,7 @@ console.log(Parson2.isAdult(38)); //true
 class Doctor extends Parson2 {
   // staticをつけることにより、staticメソッドからstaticを呼び出せる
   //
-  private static instance: Doctor; //フィールドの用意
+  private static instance: Doctor; //フィールドの用意 instanceはDoctorの形をしてほしいのでDoctorを定義
   // Abstractで定義されたメソッドは必ず継承先で定義する必要がある
   explainJob() {
     console.log("I am a doctor.");
